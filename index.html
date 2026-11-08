@@ -7,40 +7,46 @@
     <title>FIZZA | My Website</title>
     <style>
         body {
-            background: #09000f;
-            color: white;
+            background-color: #0d001a;
+            color: #ffffff;
             font-family: Arial, sans-serif;
-            text-align: center;
             margin: 0;
             padding: 0;
-        }
-        header {
-            padding: 70px 15px;
+            text-align: center;
         }
         .container {
-            max-width: 800px;
-            margin: auto;
+            padding: 40px 20px;
+        }
+        .blog-section, .contact-section, .social-section {
+            max-width: 500px;
+            margin: 40px auto;
             padding: 20px;
-        }
-        h1 {
-            font-size: 3rem;
-            color: #d1b3ff;
-            margin-bottom: 10px;
-        }
-        p {
-            font-size: 1.2rem;
-            color: #bfa3e6;
-        }
-        .social-section, .blog-section, .contact-section {
-            background: #140524;
-            margin: 20px 0;
-            padding: 25px;
+            background: rgba(255, 255, 255, 0.05);
             border-radius: 15px;
-            box-shadow: 0 4px 10px rgba(138, 43, 226, 0.2);
+            border: 1px solid #8a2be2;
         }
-        .social-btn {
-            display: inline-block;
-            background: #7b2cbf;
+        .blog-post {
+            background: #1a0033;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 10px;
+            text-align: left;
+        }
+        .blog-post h4 {
+            color: #d1b3ff;
+            margin-top: 0;
+        }
+        input, textarea {
+            width: 90%;
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 8px;
+            border: 1px solid #8a2be2;
+            background: #1a0033;
+            color: white;
+        }
+        button, .social-btn {
+            background: #a200ff;
             color: white;
             padding: 12px 25px;
             border-radius: 20px;
@@ -48,82 +54,34 @@
             font-weight: bold;
             cursor: pointer;
             text-decoration: none;
+            display: inline-block;
             margin: 5px;
         }
-        .social-btn:hover {
-            background: #8a2be2;
-        }
-        .blog-post {
-            background: #1f0836;
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 10px;
-            text-align: left;
-        }
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            background: #09000f;
-            border: 1px solid #7b2cbf;
-            color: white;
-            border-radius: 5px;
-        }
-        button[type="submit"] {
-            background: #7b2cbf;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: bold;
-        }
-        button[type="submit"]:hover {
+        button:hover, .social-btn:hover {
             background: #8a2be2;
         }
     </style>
 </head>
 <body>
-
     <div class="container">
         <h1>FIZZA ✨</h1>
         <p>Welcome To My World 💜</p>
 
-        <!-- 1. Social Media Section -->
         <div class="social-section">
             <h3>Connect With Me</h3>
             <div>
-                <a href="https://www.google.com/url?q=https://instagram.com" target="_blank" class="social-btn">Instagram</a>
-
-            Fizzawabsite/Fizzawabsit
-                
+                <a href="https://www.instagram.com" target="_blank" class="social-btn">Instagram</a>
+                <a href="https://github.com/Fizzawabsite" target="_blank" class="social-btn">GitHub</a>
             </div>
         </div>
 
-        <!-- 2. Blog Section -->
         <div class="blog-section">
             <h3>My Blog</h3>
             <div class="blog-post">
                 <h4>My First Blog Post</h4>
                 <p>Welcome to my personal website! Here I will share my thoughts, coding journey, and projects.</p>
             </div>
-            <div class="blog-post">
-                <h4>Dreaming Big & Coding</h4>
-                <p>Building websites is such a fun experience. Stay tuned for more updates!</p>
-            </div>
-        </div>
-
-        <!-- 3. Contact Form Section -->
-        <div class="contact-section">
-            <h3>Get In Touch</h3>
-            <form action="https://formspree.io/f/your-form-id" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
         </div>
     </div>
-
 </body>
 </html>

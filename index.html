@@ -2,67 +2,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FIZZA | My Website</title>
-<style>
-body {
-    background: #09000f;
-    color: white;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-header {
-    padding: 70px 15px;
-    background: linear-gradient(135deg, #19002b, #7200a8);
-}
-h1 {
-    font-size: 55px;
-    color: #e5a0ff;
-}
-p {
-    font-size: 18px;
-}
-section {
-    padding: 35px 15px;
-}
-button {
-    background: #a020f0;
-    color: white;
-    border: none;
-    padding: 14px 28px;
-    border-radius: 25px;
-    font-size: 16px;
-}
-footer {
-    padding: 20px;
-    color: #d9a5ff;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIZZA | My Website</title>
+    <style>
+        body {
+            background: #09000f;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            padding: 70px 15px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 3rem;
+            color: #d1b3ff;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.2rem;
+            color: #bfa3e6;
+        }
+        .social-section, .blog-section, .contact-section {
+            background: #140524;
+            margin: 20px 0;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(138, 43, 226, 0.2);
+        }
+        .social-btn {
+            display: inline-block;
+            background: #7b2cbf;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 20px;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            margin: 5px;
+        }
+        .social-btn:hover {
+            background: #8a2be2;
+        }
+        .blog-post {
+            background: #1f0836;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 10px;
+            text-align: left;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            background: #09000f;
+            border: 1px solid #7b2cbf;
+            color: white;
+            border-radius: 5px;
+        }
+        button[type="submit"] {
+            background: #7b2cbf;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button[type="submit"]:hover {
+            background: #8a2be2;
+        }
+    </style>
 </head>
 <body>
 
-<header>
-<h1>FIZZA</h1>
-<p>Welcome to My Personal Website 💜</p>
-<button>Explore My World</button>
-</header>
+    <div class="container">
+        <h1>FIZZA ✨</h1>
+        <p>Welcome To My World 💜</p>
 
-<section>
-<h2>About Me</h2>
-<p>Hello! I am Fizza. Welcome to my little world.</p>
-</section>
+        <!-- 1. Social Media Section -->
+        <div class="social-section">
+            <h3>Connect With Me</h3>
+            <div>
+                <a href="https://instagram.com" target="_blank" class="social-btn">Instagram</a>
+                <a href="https://github.com/Fizzawabsit" target="_blank" class="social-btn">GitHub</a>
+            </div>
+        </div>
 
-<section>
-<h2>My Dreams ✨</h2>
-<p>Dream Big, Work Hard and Shine Bright!</p>
-</section>
+        <!-- 2. Blog Section -->
+        <div class="blog-section">
+            <h3>My Blog</h3>
+            <div class="blog-post">
+                <h4>My First Blog Post</h4>
+                <p>Welcome to my personal website! Here I will share my thoughts, coding journey, and projects.</p>
+            </div>
+            <div class="blog-post">
+                <h4>Dreaming Big & Coding</h4>
+                <p>Building websites is such a fun experience. Stay tuned for more updates!</p>
+            </div>
+        </div>
 
-<footer>
-<p>Made with Love by FIZZA 💜</p>
-</footer>
+        <!-- 3. Contact Form Section -->
+        <div class="contact-section">
+            <h3>Get In Touch</h3>
+            <form action="https://formspree.io/f/your-form-id" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
 
 </body>
 </html>
